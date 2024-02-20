@@ -379,6 +379,7 @@ background-size: cover;
 
 .email {
     border: none;
+    border-bottom: 1px solid black;
     padding: 20px 30px 20px 10px;
     width: 400px;
     margin-right: 20px;
@@ -391,12 +392,6 @@ background-size: cover;
     border: none;
     border-radius: 100%;
     background-color: rgb(179, 179, 179);
-}
-
-.class {
-    background-color: rgba(128, 128, 128, 0.76);
-    height: 1px;
-    width: 44vh;
 }
 
 .email_text {
