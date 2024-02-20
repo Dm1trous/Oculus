@@ -1,0 +1,794 @@
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: gray;
+    --color-white: white;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Header */
+.list>li {
+    padding: 10px;
+    justify-content: left;
+    color: var(--color-primary);
+}
+
+.header {
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: -36%;
+}
+
+/* Header2 */
+.container_img {
+    background: url(/img/Rectangle\ 2.png);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header2_text {
+    color: var(--color-primary);
+    padding-top: 230px;
+}
+
+.header2_title {
+    font-size: 96px;
+}
+
+.header2_subtitle {
+    font-size: 36px;
+}
+
+.text {
+    font-size: 13px;
+    padding-bottom: 50px;
+}
+
+.btn_right {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    border-image-slice: 1;
+    padding: 20px 110px;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 20px 110px;
+    border: none;
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Easy to set up and safe to use */
+    .easy_text {
+        font-size: 16px;
+        color: var(--color-primary);
+        width: 300px;
+    }
+
+    .easy_text_black {
+        color: black;
+    }
+
+    .easy_text_li {
+        color: var(--color-primary);
+        font-weight: bold;
+    }
+
+    .easy_text_li>li {
+        padding: 10px;
+        width: 300px;
+    }
+
+    .easy_title {
+        margin-bottom: 20px;
+        font-size: 36px;
+        text-transform: uppercase;
+        max-width: 320px;
+        background: linear-gradient(180deg, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .easy_texting {
+        margin-top: 100px;
+    }
+
+    .easy_grid {
+        grid-template-columns: repeat(3, 1fr 1px 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .easy_grid_img{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-right: 20px;
+    }
+
+    .easy_grid_img2 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left: 20px;
+    }
+
+    .line {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: rgb(179, 179, 179);
+    }
+
+    .grid_more_text {
+        margin-left: 20px;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .easy_grid_title {
+        font-size: 24px;
+        color: var(--color-primary);
+        padding-bottom: 10px;
+    }
+
+    .easy_grid_text {
+        font-size: 16px;
+        color: var(--color-primary);
+    }
+
+    /* games */
+.main {
+    margin-bottom: 100px;
+}
+
+.games_grid {
+    grid-template-columns: repeat(4, 30vh 1fr 1fr 1fr);
+}
+
+.games_title {
+    font-size: 36px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game_text {
+    font-size: 16px;
+    color: var(--color-primary);
+    margin-bottom: 40px;
+}
+
+.games_subtitle {
+    color: var(--color-primary);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.btn2 {
+    margin-top: 40px;
+    padding: 15px 60px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    border-image-slice: 1;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content_title {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.content_text {
+    font-size: 16px;
+    color: var(--color-primary);
+    padding-bottom: 40px;
+}
+
+.content1, .content2, .content3 {
+    padding: 20px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    border-image-slice: 1;
+}
+
+.content_a {
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* oculus */
+
+.oculus_img {
+    margin: 80px 0 0 400px;
+}
+
+.container_img2 {
+    background-image: url(/img/OCULUS.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 100px;
+}
+
+.button2 {
+    margin-left: 300px;
+    margin-top: -100px;
+}
+
+/* in the box */
+
+.box_text {
+    font-size: 16px;
+    color: var(--color-primary);
+    margin: 120px 0 00px;
+}
+
+.box_grid {
+    color: var(--color-primary);
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    margin-top: -40px;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.box3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.box1, .box2, .box3, .box4, .box_title {
+    padding: 20px 10px;
+}
+
+.box_title {
+    font-size: 36px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+/* vr */
+.vr_img {
+margin-top: 50px;
+background-image: url(/img/Metaverse.png);
+width: 1200px;
+height: 500px;
+background-size: cover;
+}
+/* ACCESSORIES */
+.accessories_text {
+    font-size: 16px;
+    color: var(--color-primary);
+    margin: 80px 0 0 0;
+}
+
+.accessories_title {
+    margin: -80px 0 30px 0;
+    font-size: 36px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accessories_grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.accessories_subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.accessories_text2 {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn3 {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 5px 50px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    border-image-slice: 1;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accessories_content {
+    padding: 20px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba(128, 0, 128, 0.774), rgba(0, 0, 255, 0.726));
+    border-image-slice: 1;
+}
+
+/* email */
+
+.email_title {
+    margin: 100px 0 20px 0;
+    font-size: 24px;
+}
+
+.email {
+    border: none;
+    padding: 20px 30px 20px 10px;
+    width: 400px;
+    margin-right: 20px;
+    border-color: rgba(128, 128, 128, 0.705);
+}
+
+.go {
+    font-size: 16px;
+    padding: 20px 17px;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(179, 179, 179);
+}
+
+.class {
+    background-color: rgba(128, 128, 128, 0.76);
+    height: 1px;
+    width: 44vh;
+}
+
+.email_text {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--color-primary);
+    width: 48%;
+}
+
+.emails {
+    font-size: 16px;
+    margin-top: 55px;
+    margin-left: 500px;
+    color: var(--color-primary);
+}
+
+/* footer */
+.footer{
+border-top: 1px solid rgba(128, 128, 128, 0.767);
+border-bottom: 1px solid rgba(128, 128, 128, 0.767);
+margin-bottom: 50px;
+}
+
+.fot_flex>a {
+    padding: 10px;
+}
+
+/* Приколы */
+.btn, .btn2, .go, .btn3:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.548), rgba(0, 0, 255, 0.562));
+}
+
+.btn3:active, .btn2:active {
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.548), rgba(0, 0, 255, 0.562));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.go:active {
+    background-color: rgba(0, 0, 0, 0.589);
+    color: var(--color-white);
+}
+
+.content1:hover, .content2:hover, .content3:hover{
+    transition: 0.5s ease-in-out;
+    transform: translate3d(0px, -50px, 0px);
+}
+
+.accessories_content>img:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+
+.header2_title {
+    animation: title 2.5s ease-in-out;
+}
+
+.header2_subtitle, .header2_text>p {
+    opacity: 0;
+    animation: logo 5s forwards;
+}
+
+.soc:hover {
+    background: linear-gradient(180deg, rgba(128, 0, 128, 0.548), rgba(0, 0, 255, 0.562));
+    border-radius: 50%;
+}
+
+@keyframes logo {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes title {
+    0% {
+        transform: translate(-500px, 0);}
+    100% {
+        transform: translate(0, 0);}
+  }
+
+/* адаптация */
+
+@media only screen and (min-width: 965px) and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+    .container_img {
+        height: 70vh;
+    }
+    .grid_more_text {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0;
+    }
+    .easy_grid_img, .easy_grid_img2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 300px;
+        height: 170px;
+        margin: 0;
+    }
+    .main {
+        margin-bottom: 20px;
+    }
+    .line {
+        display: none;
+    }
+    .games_grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .content1>img, .content2>img, .content3>img {
+        width: 160px;
+        height: 180px;
+    }
+    .content1, .content2, .content3 {
+        text-align: center;
+    }
+    .btn2, .games_title, .games_subtitle {
+        margin-right: 40px;
+    }
+    .easy_text, .easy_text_li>li {
+        width: 265px;
+    }
+    .vr_img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .box1>img {
+        width: 480px;
+        height: 400px;
+    }
+    .box2>img, .box3>img, .box4>img {
+        width: 200px;
+        height: 160px;
+    }
+    .accessories_content>img {
+        width: 160px;
+        height: 180px;
+    }
+    .emails {
+        margin-left: 300px;
+    }
+    .button2 {
+        margin-left: 200px;
+        margin-top: -30px;  
+    }
+    .oculus_img {
+        margin: 80px 0 0 350px;
+    }
+    .go {
+        margin-left: -100px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 965px) {
+    .container {
+        width: 95%;
+    }
+    .container_img {
+        height: 50vh;
+    } 
+    .header2_text {
+        padding-top: 40px;
+    }
+    .footer_logo {
+        display: none;
+    }
+    .grid_more_text {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0;
+    }
+    .easy_grid_img, .easy_grid_img2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 250px;
+        height: 150px;
+        margin: 0;
+    }
+    .main {
+        margin-bottom: 20px;
+    }
+    .line {
+        display: none;
+    }
+    .logo {
+        width: 70%;
+        margin-right: -50px;
+    }
+    .easy_title, .games_title, .box_title, .accessories_title {
+        font-size: 24px;
+    }
+    .games_subtitle, .btn2, .box1,.box2,.box3,.box4>p, .accessories_text2 {
+        font-size: 14px;
+    }
+    .easy_text_li>li, .easy_text {
+        width: 200px;
+    }
+    .content1>img, .content2>img, .content3>img {
+        width: 130px;
+        height: 150px;
+    }
+    .content1, .content2, .content3 {
+        text-align: center;
+    }
+    .btn2, .games_title, .games_subtitle {
+        margin-right: 20px;
+    }
+    .games_grid {
+        grid-template-columns: repeat(4, 0.6fr 1fr 1fr 1fr);
+    }
+    .content_title {
+        font-size: 16px;
+    }
+    .content_text {
+        font-size: 14px;
+    }
+    .oculus_img {
+        margin: 80px 0 0 250px;
+        width: 300px;
+    }
+    .button2 {
+        margin-left: 80px;
+        margin-top: -30px;
+    }
+    .box1>img {
+        width: 340px;
+        height: 300px;
+    }
+    .box2>img, .box3>img, .box4>img {
+        width: 150px;
+        height: 130px;
+    }
+    .vr_img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .accessories_content>img {
+        width: 130px;
+        height: 150px;
+    }
+    .accessories_subtitle {
+        font-size: 18px;
+    }
+    .accessories_content {
+        text-align: center;
+    }
+    .go {
+        margin-left: -160px;
+    }
+    .emails {
+        margin-left: 250px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 965px) {
+    .oculus_img {
+        margin: 80px 0 0 300px;
+        width: 300px;
+    }
+    .button2 {
+        margin-left: 150px;
+        margin-top: -30px;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 965px) {
+    .oculus_img {
+        margin: 80px 0 0 280px;
+        width: 300px;
+    }
+    .button2 {
+        margin-left: 130px;
+        margin-top: -30px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .container{
+        width: 95%;
+    }
+    .list {
+        font-size: 10px;
+    }
+    .logo {
+        width: 40%;
+        margin-left: 20px;
+    }
+    .easy_title, .games_title, .box_title, .accessories_title, .easy_grid_title, .content_title {
+        font-size: 14px;
+    }
+    .games_subtitle, .btn2, .box1,.box2,.box3,.box4>p, .accessories_text2, .easy_grid_text, .content_text {
+        font-size: 10px;
+    }
+    .header2_title {
+        font-size: 30px;
+    }
+    .header2_subtitle {
+        font-size: 20px;
+    }
+    .header2_text {
+        margin-top: -200px;
+    }
+    .btn, .btn_right, .btn2 {
+        padding: 10px 60px;
+        font-size: 10px;
+    }
+    .easy_text_li>li, .easy_text {
+        width: 100px;
+    }
+    .easy_text_li>li {
+        font-size: 10px;
+    }
+    .buy {
+    width: 20px;
+    }
+    .easy_text {
+        font-size: 14px;
+    }
+    .easy_grid_img, .easy_grid_img2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 250px;
+        height: 150px;
+        margin: 0;
+    }
+    .easy_grid_img2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .grid_more_text {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 40px 0 15px 0;
+    }
+    .line {
+        display: none;
+    }
+    .content1>img, .content2>img, .content3>img {
+        width: 100px;
+        height: 110px;
+    }
+    .content1, .content2, .content3 {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .games_grid {
+        width: 20px;
+    }
+    .content1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .content2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .content3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .games_text {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+    .btn2 {
+        margin: 20px 0;
+    }
+    .content1:hover, .content2:hover, .content3:hover{
+        transition: none;
+        transform: none;
+    }
+    
+}
